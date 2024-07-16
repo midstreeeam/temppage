@@ -8,13 +8,13 @@
         body, html {
             margin: 0;
             padding: 0;
-        }
-        .image-container img {
+          }
+          .image-container img {
             width: 100%;
             height: auto;
             display: block;
-        }
-        .download-button, .copy-button {
+          }
+        .download-button {
             background-color: #4CAF50; /* Green */
             border: none;
             color: white;
@@ -27,20 +27,7 @@
             cursor: pointer;
             border-radius: 4px;
         }
-        .copy-button {
-            background-color: #008CBA; /* Blue */
-        }
     </style>
-    <script>
-        function copyToClipboard() {
-            var copyText = "https://gitee.com/kaiyuan-lou/pagetest/raw/master/maibi.pdf";
-            navigator.clipboard.writeText(copyText.innerText).then(function() {
-                alert("Link copied to clipboard!");
-            }, function(err) {
-                alert("Failed to copy: ", err);
-            });
-        }
-    </script>
 </head>
 <body>
     <div class="image-container">
@@ -61,7 +48,7 @@
         <img src="https://pic.imgdb.cn/item/66966780d9c307b7e917c968.png" alt="maibi-15.png">
     </div>
 
+
     <a href="https://gitee.com/kaiyuan-lou/pagetest/raw/master/maibi.pdf" class="download-button" download>Download PDF</a>
-    <button class="copy-button" onclick="copyToClipboard()">若下载按钮无效，点此复制链接使用浏览器打开</button>
 </body>
 </html>
