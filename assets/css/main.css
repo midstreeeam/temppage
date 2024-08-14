@@ -25,6 +25,7 @@
   --accent-color: #50d8af; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --taobao-color: #9b9b9b;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -216,7 +217,7 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--accent-color);
 }
 
 .scrolled .header {
@@ -512,6 +513,7 @@ h6 {
   text-decoration: none;
 }
 
+
 .footer .copyright {
   padding-top: 25px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -726,9 +728,10 @@ section,
 .hero .info h2 {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  font-size: 72px;
+  font-size: 65px;
   font-weight: 700;
   position: relative;
+  /* color: var(--accent-color); */
 }
 
 .hero .info h2 span {
@@ -742,7 +745,7 @@ section,
   display: block;
   width: 80px;
   height: 4px;
-  background: var(--accent-color);
+  background: var(--heading-color);
   left: 0;
   right: 0;
   bottom: 0;
